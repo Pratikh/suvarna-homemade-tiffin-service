@@ -2,383 +2,783 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="keywords" content="tiffin, homemade, Pune, lunch, dinner, food delivery, home cooked, Indian food, vegetarian, healthy" />
-    <link rel="icon" type="image/png" href="https://img.icons8.com/emoji/48/meal-emoji.png" />
-    <meta name="theme-color" content="#ff9800" />
-    <title>Suvarna Homemade Tiffin Service</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Suvarna Homemade Tiffin Service | Ghar Jaisa Khana in Pune</title>
     <meta
       name="description"
-      content="Fresh homemade tiffin meals in Pune — Half (₹50) & Full (₹70). Home pickup only. Order on WhatsApp."
+      content="Fresh homemade tiffin in Wadgaon Sheri, Pune. Half Tiffin ₹60 (bhaji + 3 chapati) and Full Tiffin ₹80 (3 chapati + bhaji + rice + dal). Pickup only. Order on WhatsApp."
+    />
+    <meta name="theme-color" content="#faf6ee" />
+    <link rel="canonical" href="https://pratikh.github.io/suvarna-homemade-tiffin-service/" />
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Suvarna Homemade Tiffin Service" />
+    <meta property="og:title" content="Suvarna Homemade Tiffin Service | Ghar Jaisa Khana" />
+    <meta
+      property="og:description"
+      content="Fresh homemade vegetarian tiffin in Pune. Half ₹60 · Full ₹80. Pickup only. Order on WhatsApp."
+    />
+    <meta property="og:url" content="https://pratikh.github.io/suvarna-homemade-tiffin-service/" />
+    <meta
+      property="og:image"
+      content="https://pratikh.github.io/suvarna-homemade-tiffin-service/images/opt/tiffin2-1200.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1600" />
+    <meta property="og:image:alt" content="Homemade uttapam served with coconut chutney on a steel plate" />
+    <meta property="og:locale" content="en_IN" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Favicon: inline SVG, zero extra requests -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232f6b3f'/%3E%3Ctext y='.9em' x='50' font-size='62' text-anchor='middle'%3E%F0%9F%8D%B1%3C/text%3E%3C/svg%3E"
     />
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-      :root {
-        --accent: #ff9800;
-        --accent-dark: #f57c00;
-        --muted: #f9f6f2;
-        --card-bg: #fffdfa;
-        --header-bg: linear-gradient(90deg, #ffb74d 0%, #ff9800 100%);
-        --shadow: 0 8px 24px rgba(255, 152, 0, 0.08), 0 1.5px 4px rgba(0,0,0,0.04);
-      }
-      .testimonial {
-        background: #fff8e1;
-        border-left: 5px solid var(--accent);
-        margin: 18px 0 0 0;
-        padding: 18px 18px 12px 18px;
-        border-radius: 12px;
-        font-style: italic;
-        color: #7c4d00;
-        box-shadow: 0 1px 4px rgba(255, 152, 0, 0.07);
-      }
-      .testimonial .author {
-        font-style: normal;
-        font-weight: 700;
-        color: #b26a00;
-        margin-top: 8px;
-        display: block;
-      }
-      .faq {
-        margin: 24px 0 0 0;
-      }
-      .faq h3 {
-        color: var(--accent-dark);
-        margin-bottom: 8px;
-      }
-      .faq-item {
-        margin-bottom: 16px;
-      }
-      .faq-q {
-        font-weight: 700;
-        color: #b26a00;
-      }
-      .faq-a {
-        margin-left: 8px;
-        color: #444;
-      }
-      #backToTop {
-        position: fixed;
-        bottom: 32px;
-        right: 32px;
-        background: var(--accent);
-        color: #fff;
-        border: none;
-        border-radius: 50%;
-        width: 48px;
-        height: 48px;
-        font-size: 2rem;
-        box-shadow: 0 2px 8px rgba(255, 152, 0, 0.18);
-        cursor: pointer;
-        display: none;
-        z-index: 1000;
-        transition: background 0.2s, box-shadow 0.2s;
-      }
-      #backToTop:hover {
-        background: var(--accent-dark);
-        box-shadow: 0 4px 16px rgba(255, 152, 0, 0.22);
-      }
-      body {
-        font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background: var(--muted);
-        color: #222;
-        min-height: 100vh;
-      }
-      header {
-        background: var(--header-bg);
-        padding: 32px 12px 24px 12px;
-        text-align: center;
-        font-size: 2.2rem;
-        font-weight: 700;
-        color: #fff;
-        letter-spacing: 1px;
-        border-bottom-left-radius: 32px;
-        border-bottom-right-radius: 32px;
-        box-shadow: 0 4px 24px rgba(255, 152, 0, 0.10);
-      }
-      .section {
-        padding: 32px 16px;
-        max-width: 900px;
-        margin: 24px auto;
-      }
-      h2 {
-        color: var(--accent-dark);
-        margin-top: 0;
-        font-family: 'Montserrat', Arial, sans-serif;
-        font-size: 1.5rem;
-      }
-      .card {
-        background: var(--card-bg);
-        padding: 24px 20px 20px 20px;
-        margin: 18px 0;
-        border-radius: 18px;
-        box-shadow: var(--shadow);
-        transition: box-shadow 0.2s, transform 0.2s;
-      }
-      .card:hover {
-        box-shadow: 0 12px 32px rgba(255, 152, 0, 0.16), 0 2px 8px rgba(0,0,0,0.06);
-        transform: translateY(-2px) scale(1.01);
-      }
-      .btn {
-        display: inline-block;
-        padding: 13px 22px;
-        background: var(--accent);
-        color: white;
-        border-radius: 10px;
-        text-decoration: none;
-        font-weight: 700;
-        font-family: 'Montserrat', Arial, sans-serif;
-        font-size: 1rem;
-        box-shadow: 0 2px 8px rgba(255, 152, 0, 0.10);
-        border: none;
-        transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
-        cursor: pointer;
-      }
-      .btn:hover, .btn:focus {
-        background: var(--accent-dark);
-        box-shadow: 0 4px 16px rgba(255, 152, 0, 0.18);
-        transform: translateY(-1px) scale(1.03);
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 20px;
-      }
-      .price {
-        font-size: 20px;
-        font-weight: 700;
-      }
-      .list {
-        margin: 8px 0 0 0;
-      }
-      .gallery {
-        display: flex;
-        gap: 16px;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-      }
-      .gallery img {
-        width: calc(33% - 12px);
-        border-radius: 14px;
-        object-fit: cover;
-        height: 140px;
-        box-shadow: 0 2px 8px rgba(255, 152, 0, 0.10);
-        transition: transform 0.18s, box-shadow 0.18s;
-        background: #fff7e6;
-      }
-      .gallery img:hover {
-        transform: scale(1.04) rotate(-1deg);
-        box-shadow: 0 6px 18px rgba(255, 152, 0, 0.18);
-      }
-      @media (max-width: 600px) {
-        .gallery img {
-          width: 100%;
-          height: 120px;
+    <!-- Self-hosted system-font stack; no web-font request on the critical path -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FoodEstablishment",
+        "name": "Suvarna Homemade Tiffin Service",
+        "description": "Fresh, homemade vegetarian tiffin meals prepared daily. Pickup only from Wadgaon Sheri, Pune.",
+        "url": "https://pratikh.github.io/suvarna-homemade-tiffin-service/",
+        "telephone": "+91-7558701599",
+        "servesCuisine": "Indian",
+        "priceRange": "₹60–₹80",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "40/1/23, Namadev Nagar, Lane No. 3, Rajashri Colony, Namdeo Nagar, Wadgaon Sheri",
+          "addressLocality": "Pune",
+          "addressRegion": "Maharashtra",
+          "postalCode": "411014",
+          "addressCountry": "IN"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 18.5509938, "longitude": 73.9233879 },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "11:30",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "19:00",
+            "closes": "21:00"
+          }
+        ],
+        "hasMenu": {
+          "@type": "Menu",
+          "name": "Tiffin Menu",
+          "hasMenuSection": {
+            "@type": "MenuSection",
+            "name": "Tiffin",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Half Tiffin",
+                "description": "Bhaji + 3 Chapati",
+                "offers": { "@type": "Offer", "price": "60", "priceCurrency": "INR" }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Full Tiffin",
+                "description": "3 Chapati + Bhaji + Rice + Dal",
+                "offers": { "@type": "Offer", "price": "80", "priceCurrency": "INR" }
+              }
+            ]
+          }
         }
       }
-      footer {
-        text-align: center;
-        padding: 22px 10px;
-        background: #fff3e0;
-        margin-top: 36px;
-        font-size: 1rem;
-        color: #b26a00;
-        border-top-left-radius: 24px;
-        border-top-right-radius: 24px;
-        box-shadow: 0 -2px 12px rgba(255, 152, 0, 0.06);
-      }
-      .map-wrap iframe {
-        width: 100%;
-        height: 300px;
-        border: 0;
-        border-radius: 14px;
-        box-shadow: 0 2px 8px rgba(255, 152, 0, 0.10);
-      }
-      .contact-row {
-        display: flex;
-        gap: 18px;
-        align-items: flex-start;
-        flex-wrap: wrap;
-      }
-      .small {
-        font-size: 13px;
-        color: #888;
-      }
-      table.pricing {
-        width: 100%;
-        border-collapse: collapse;
-        background: #fff;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 1px 4px rgba(255, 152, 0, 0.07);
-      }
-      table.pricing td,
-      table.pricing th {
-        padding: 13px 10px;
-        border-bottom: 1px solid #ffe0b2;
-        font-size: 1rem;
-      }
-      table.pricing th {
-        background: #fff3e0;
-        color: #b26a00;
-        font-weight: 700;
-      }
-      .note {
-        font-size: 13px;
-        color: #b26a00;
-        background: #fff8e1;
-        padding: 7px 12px;
-        border-radius: 7px;
-        margin-top: 10px;
-        display: inline-block;
-      }
-    </style>
+    </script>
   </head>
+
   <body>
-    <header>Suvarna Homemade Tiffin Service</header>
-    <main>
-      <div class="section">
-        <div class="card">
-          <h2>About Us</h2>
-          <p>
-            Fresh, homemade tiffin meals prepared daily with care. Pickup only
-            from our Pune location — ideal for students, working professionals and
-            families.
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ============ HEADER / NAV ============ -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Suvarna Homemade Tiffin Service — home">
+          <span class="brand-mark" aria-hidden="true">🍱</span>
+          <span class="brand-text">
+            <strong>Suvarna</strong>
+            <small>Homemade Tiffin Service</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+          aria-label="Open navigation menu"
+        >
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+
+        <nav class="primary-nav" id="primaryNav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#why-us">Why Us</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a
+                class="btn btn-whatsapp btn-sm"
+                href="https://wa.me/919890607607?text=Hi%20Suvarna%20Tiffin%20Service%2C%20I%20want%20to%20order%20a%20tiffin"
+                target="_blank"
+                rel="noopener"
+                >💬 Order on WhatsApp</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span aria-hidden="true">🌿</span> Wadgaon Sheri, Pune · Pickup Only
+            </p>
+            <h1 id="hero-title">
+              <span class="hero-line">Ghar Jaisa Khana,</span>
+              <span class="hero-line">Roz Aapke Ghar Tak <span aria-hidden="true">❤️</span></span>
+            </h1>
+            <p class="hero-sub">
+              Fresh, homemade and delicious meals prepared with care for you and your family.
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="btn btn-whatsapp btn-lg"
+                href="https://wa.me/919890607607?text=Hi%20Suvarna%20Tiffin%20Service%2C%20I%20want%20to%20order%20a%20tiffin"
+                target="_blank"
+                rel="noopener"
+                >💬 Order on WhatsApp</a
+              >
+              <a class="btn btn-ghost btn-lg" href="#menu">View Menu</a>
+            </div>
+
+            <dl class="hero-stats">
+              <div>
+                <dt>Half Tiffin</dt>
+                <dd>₹60</dd>
+              </div>
+              <div>
+                <dt>Full Tiffin</dt>
+                <dd>₹80</dd>
+              </div>
+              <div>
+                <dt>Lunch &amp; Dinner</dt>
+                <dd>Daily</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero-media">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="images/opt/tiffin2-640.avif 640w, images/opt/tiffin2-800.avif 800w, images/opt/tiffin2-1200.avif 1200w"
+                sizes="(min-width: 1024px) 46vw, 92vw"
+              />
+              <source
+                type="image/webp"
+                srcset="images/opt/tiffin2-640.webp 640w, images/opt/tiffin2-800.webp 800w, images/opt/tiffin2-1200.webp 1200w"
+                sizes="(min-width: 1024px) 46vw, 92vw"
+              />
+              <img
+                src="images/opt/tiffin2-800.jpg"
+                srcset="images/opt/tiffin2-640.jpg 640w, images/opt/tiffin2-800.jpg 800w, images/opt/tiffin2-1200.jpg 1200w"
+                sizes="(min-width: 1024px) 46vw, 92vw"
+                alt="Freshly made homemade uttapam served with coconut chutney on a steel plate"
+                width="800"
+                height="1067"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TRUST HIGHLIGHTS ============ -->
+      <section class="trust" aria-label="What makes our tiffin special">
+        <div class="container">
+          <ul class="trust-grid">
+            <li>
+              <span class="trust-icon" aria-hidden="true">🍱</span>
+              <span class="trust-label">Homemade Food</span>
+            </li>
+            <li>
+              <span class="trust-icon" aria-hidden="true">🌿</span>
+              <span class="trust-label">Fresh Ingredients</span>
+            </li>
+            <li>
+              <span class="trust-icon" aria-hidden="true">❤️</span>
+              <span class="trust-label">Made With Care</span>
+            </li>
+            <li>
+              <span class="trust-icon" aria-hidden="true">🧼</span>
+              <span class="trust-label">Hygienically Prepared</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ MENU ============ -->
+      <section class="section" id="menu" aria-labelledby="menu-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Our Menu</p>
+            <h2 id="menu-title">Simple, home-style meals</h2>
+            <p class="section-sub">
+              Every tiffin is cooked fresh the same day. Vegetarian, with Jain and special diet
+              options on request.
+            </p>
+          </header>
+
+          <div class="menu-grid">
+            <article class="menu-card">
+              <div class="menu-card-media">
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="images/opt/tiffin3-400.avif 400w, images/opt/tiffin3-640.avif 640w"
+                    sizes="(min-width: 768px) 42vw, 92vw"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="images/opt/tiffin3-400.webp 400w, images/opt/tiffin3-640.webp 640w"
+                    sizes="(min-width: 768px) 42vw, 92vw"
+                  />
+                  <img
+                    src="images/opt/tiffin3-400.jpg"
+                    srcset="images/opt/tiffin3-400.jpg 400w, images/opt/tiffin3-640.jpg 640w"
+                    sizes="(min-width: 768px) 42vw, 92vw"
+                    alt="Two stuffed parathas served hot on a steel plate with tomato ketchup"
+                    width="400"
+                    height="533"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <span class="veg-badge" title="Vegetarian">
+                  <span class="veg-dot" aria-hidden="true"></span> Veg
+                </span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Half Tiffin</h3>
+                  <p class="price">₹60</p>
+                </div>
+                <p class="menu-desc">Bhaji + 3 Chapati</p>
+                <ul class="menu-tags">
+                  <li>Freshly cooked</li>
+                  <li>Light portion</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="menu-card menu-card--featured">
+              <div class="menu-card-media">
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="images/opt/tiffin1-400.avif 400w, images/opt/tiffin1-640.avif 640w"
+                    sizes="(min-width: 768px) 42vw, 92vw"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="images/opt/tiffin1-400.webp 400w, images/opt/tiffin1-640.webp 640w"
+                    sizes="(min-width: 768px) 42vw, 92vw"
+                  />
+                  <img
+                    src="images/opt/tiffin1-400.jpg"
+                    srcset="images/opt/tiffin1-400.jpg 400w, images/opt/tiffin1-640.jpg 640w"
+                    sizes="(min-width: 768px) 42vw, 92vw"
+                    alt="Homemade chapati, bhaji and chutney served on a steel thali"
+                    width="400"
+                    height="533"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+                <span class="veg-badge" title="Vegetarian">
+                  <span class="veg-dot" aria-hidden="true"></span> Veg
+                </span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Full Tiffin</h3>
+                  <p class="price">₹80</p>
+                </div>
+                <p class="menu-desc">3 Chapati + Bhaji + Rice + Dal</p>
+                <ul class="menu-tags">
+                  <li>Complete meal</li>
+                  <li>Most popular</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <p class="note">
+            <span aria-hidden="true">ℹ️</span> Jain or special diet options available — just mention
+            your requirements while ordering.
           </p>
         </div>
+      </section>
 
-        <div class="card">
-          <h2>Menu & Pricing</h2>
-          <table class="pricing">
-            <tr>
-              <th>Item</th>
-              <th>Includes</th>
-              <th>Price</th>
-            </tr>
-            <tr>
-              <td class="price">Half Tiffin</td>
-              <td>Bhaji + 3 Chapati</td>
-              <td>₹60</td>
-            </tr>
-            <tr>
-              <td class="price">Full Tiffin</td>
-              <td>Bhaji + 3 Chapati + Rice + Dal</td>
-              <td>₹80</td>
-            </tr>
-          </table>
-        </div>
+      <!-- ============ PRICING / PLANS ============ -->
+      <section class="section section--alt" id="pricing" aria-labelledby="pricing-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Pricing</p>
+            <h2 id="pricing-title">Pick a plan that suits you</h2>
+            <p class="section-sub">
+              Order a single tiffin or save with a weekly and monthly plan.
+            </p>
+          </header>
 
-        <div class="card">
-          <h2>Gallery</h2>
-          <div class="gallery">
-            <img src="images/tiffin1.jpg" alt="Homemade tiffin meal with chapati and bhaji" loading="lazy" aria-label="Tiffin meal photo 1" width="360" height="140" />
-            <img src="images/tiffin2.jpg" alt="Full tiffin with rice, dal, chapati, and bhaji" loading="lazy" aria-label="Tiffin meal photo 2" width="360" height="140" />
-            <img src="images/tiffin3.jpg" alt="Closeup of fresh chapatis and vegetables" loading="lazy" aria-label="Tiffin meal photo 3" width="360" height="140" />
-          </div>
-        </div>
+          <div class="plan-grid">
+            <article class="plan-card">
+              <h3>Half Tiffin</h3>
+              <p class="plan-price"><span>₹60</span> <small>/ tiffin</small></p>
+              <p class="plan-desc">Bhaji + 3 Chapati</p>
+              <ul class="plan-list">
+                <li>Perfect for a light meal</li>
+                <li>Pickup from our Pune location</li>
+              </ul>
+              <a
+                class="btn btn-outline btn-block"
+                href="https://wa.me/919890607607?text=Hi%20Suvarna%20Tiffin%20Service%2C%20I%20want%20to%20order%20a%20Half%20Tiffin"
+                target="_blank"
+                rel="noopener"
+                >Order Half Tiffin</a
+              >
+            </article>
 
+            <article class="plan-card plan-card--featured">
+              <p class="plan-flag">Most popular</p>
+              <h3>Full Tiffin</h3>
+              <p class="plan-price"><span>₹80</span> <small>/ tiffin</small></p>
+              <p class="plan-desc">3 Chapati + Bhaji + Rice + Dal</p>
+              <ul class="plan-list">
+                <li>A complete, filling meal</li>
+                <li>Pickup from our Pune location</li>
+              </ul>
+              <a
+                class="btn btn-whatsapp btn-block"
+                href="https://wa.me/919890607607?text=Hi%20Suvarna%20Tiffin%20Service%2C%20I%20want%20to%20order%20a%20Full%20Tiffin"
+                target="_blank"
+                rel="noopener"
+                >💬 Order Full Tiffin</a
+              >
+            </article>
 
-
-        <div class="card">
-          <h2>Pickup Timings</h2>
-          <p>Daily: <b>11:30 AM – 2:00 PM</b> and <b>7:00 PM – 9:00 PM</b></p>
-        </div>
-
-        <div class="card">
-          <h2>Location</h2>
-          <div class="map-wrap">
-            <iframe
-              src="https://www.google.com/maps?q=18.5509938,73.9233879&z=16&output=embed"
-              allowfullscreen
-              loading="lazy"
-              title="Suvarna Homemade Tiffin Service Location"
-            ></iframe>
-          </div>
-          <p class="small">
-            Pickup address: 40/1/23, Namadev Nagar, Lane No. 3, Rajashri Colony, Namdeo Nagar, Wadgaon Sheri, Pune, Maharashtra 411014
-          </p>
-        </div>
-
-        <div class="card">
-          <h2>Contact & Orders</h2>
-          <div class="contact-row">
-            <div>
-              <p><b>Phone:</b> <a href="tel:+917558701599" aria-label="Call 7558701599">+91-7558701599</a> / <a href="tel:+919890607607" aria-label="Call 9890607607">9890607607</a></p>
-              <p>
-                <b>WhatsApp:</b>
-                <a
-                  class="btn"
-                  href="https://wa.me/9890607607?text=Hi%20Suvarna%20Tiffin%20Service%2C%20I%20want%20to%20order%20a%20tiffin"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Order on WhatsApp"
-                  >Order on WhatsApp</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <h2>Monthly & Bulk Plans</h2>
-          <div class="grid">
-            <div>
-              <h3>Daily (30 days)</h3>
-              <p>
-                Full Tiffin × 30 = ₹2100 (we can offer discount for advance
-                payments)
-              </p>
-            </div>
-            <div>
+            <article class="plan-card">
               <h3>Weekly</h3>
-              <p>Full Tiffin × 7 = ₹490</p>
-            </div>
+              <p class="plan-price"><span>₹490</span> <small>/ 7 days</small></p>
+              <p class="plan-desc">Full Tiffin × 7</p>
+              <ul class="plan-list">
+                <li>Full tiffin every day for a week</li>
+                <li>Pickup from our Pune location</li>
+              </ul>
+              <a
+                class="btn btn-outline btn-block"
+                href="https://wa.me/919890607607?text=Hi%20Suvarna%20Tiffin%20Service%2C%20I%20want%20to%20know%20about%20the%20weekly%20plan"
+                target="_blank"
+                rel="noopener"
+                >Enquire on WhatsApp</a
+              >
+            </article>
+
+            <article class="plan-card">
+              <h3>Monthly</h3>
+              <p class="plan-price"><span>₹2100</span> <small>/ 30 days</small></p>
+              <p class="plan-desc">Full Tiffin × 30</p>
+              <ul class="plan-list">
+                <li>Discount available on advance payment</li>
+                <li>Pickup from our Pune location</li>
+              </ul>
+              <a
+                class="btn btn-outline btn-block"
+                href="https://wa.me/919890607607?text=Hi%20Suvarna%20Tiffin%20Service%2C%20I%20want%20to%20know%20about%20the%20monthly%20plan"
+                target="_blank"
+                rel="noopener"
+                >Enquire on WhatsApp</a
+              >
+            </article>
           </div>
-          <p class="small">
-            Tell us your preferred plan and we will give a custom quote.
+
+          <p class="note">
+            <span aria-hidden="true">ℹ️</span> Bulk and event orders are welcome — contact us for a
+            custom quote.
           </p>
         </div>
+      </section>
 
-        <div class="card faq">
-          <h2>Frequently Asked Questions</h2>
-          <dl>
-            <div class="faq-item">
-              <dt class="faq-q">Q: Do you offer Jain or special diet options?</dt>
-              <dd class="faq-a">A: Yes, please mention your requirements while ordering.</dd>
+      <!-- ============ WHY CHOOSE US ============ -->
+      <section class="section" id="why-us" aria-labelledby="why-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Why Choose Us</p>
+            <h2 id="why-title">Food that tastes like home</h2>
+          </header>
+
+          <ul class="feature-grid">
+            <li class="feature-card">
+              <span class="feature-icon" aria-hidden="true">🍲</span>
+              <h3>Homemade Taste</h3>
+              <p>Food prepared with the comfort of home.</p>
+            </li>
+            <li class="feature-card">
+              <span class="feature-icon" aria-hidden="true">🌿</span>
+              <h3>Fresh Ingredients</h3>
+              <p>Freshly prepared meals.</p>
+            </li>
+            <li class="feature-card">
+              <span class="feature-icon" aria-hidden="true">❤️</span>
+              <h3>Made With Care</h3>
+              <p>Every meal receives personal attention.</p>
+            </li>
+            <li class="feature-card">
+              <span class="feature-icon" aria-hidden="true">💰</span>
+              <h3>Affordable</h3>
+              <p>Good food at a reasonable price.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ HOW IT WORKS ============ -->
+      <section class="section section--alt" id="how-it-works" aria-labelledby="how-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">How It Works</p>
+            <h2 id="how-title">Ordering is easy</h2>
+          </header>
+
+          <ol class="steps">
+            <li class="step">
+              <span class="step-num" aria-hidden="true">01</span>
+              <h3>Choose</h3>
+              <p>Select your tiffin.</p>
+            </li>
+            <li class="step">
+              <span class="step-num" aria-hidden="true">02</span>
+              <h3>Order</h3>
+              <p>Contact us through WhatsApp.</p>
+            </li>
+            <li class="step">
+              <span class="step-num" aria-hidden="true">03</span>
+              <h3>Enjoy</h3>
+              <p>Enjoy fresh homemade food.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT + TIMINGS ============ -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div class="about-copy">
+            <p class="eyebrow">About Us</p>
+            <h2 id="about-title">Homemade tiffin, made daily in Pune</h2>
+            <p>
+              Fresh, homemade tiffin meals prepared daily with care. Pickup only from our Pune
+              location — ideal for students, working professionals and families.
+            </p>
+            <p>
+              We cook in small batches every day, so your tiffin reaches you fresh, warm and
+              hygienically packed.
+            </p>
+
+            <div class="about-timings">
+              <h3>Pickup Timings</h3>
+              <ul class="timing-list">
+                <li><span aria-hidden="true">🌤️</span> Lunch: <b>11:30 AM – 2:00 PM</b></li>
+                <li><span aria-hidden="true">🌙</span> Dinner: <b>7:00 PM – 9:00 PM</b></li>
+              </ul>
             </div>
-            <div class="faq-item">
-              <dt class="faq-q">Q: Is home delivery available?</dt>
-              <dd class="faq-a">A: Currently, we offer pickup only from our Pune location.</dd>
+          </div>
+
+          <div class="faq-block">
+            <h2 id="faq-title">Frequently Asked Questions</h2>
+            <dl class="faq-list">
+              <div class="faq-item">
+                <dt>Do you offer Jain or special diet options?</dt>
+                <dd>Yes, please mention your requirements while ordering.</dd>
+              </div>
+              <div class="faq-item">
+                <dt>Is home delivery available?</dt>
+                <dd>Currently, we offer pickup only from our Pune location.</dd>
+              </div>
+              <div class="faq-item">
+                <dt>Can I order for a group or event?</dt>
+                <dd>
+                  Yes, we provide bulk and monthly plans. Contact us for a custom quote.
+                </dd>
+              </div>
+              <div class="faq-item">
+                <dt>How do I pay?</dt>
+                <dd>We accept cash, UPI, and most digital payments at pickup.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ GALLERY ============ -->
+      <section class="section section--alt" id="gallery" aria-labelledby="gallery-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Gallery</p>
+            <h2 id="gallery-title">A look at our kitchen</h2>
+            <p class="section-sub">Real meals, cooked and served fresh every day.</p>
+          </header>
+
+          <ul class="gallery-grid">
+            <li>
+              <figure>
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="images/opt/tiffin1-400.avif 400w, images/opt/tiffin1-640.avif 640w"
+                    sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 92vw"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="images/opt/tiffin1-400.webp 400w, images/opt/tiffin1-640.webp 640w"
+                    sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 92vw"
+                  />
+                  <img
+                    src="images/opt/tiffin1-400.jpg"
+                    srcset="images/opt/tiffin1-400.jpg 400w, images/opt/tiffin1-640.jpg 640w"
+                    sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 92vw"
+                    alt="Homemade chapati, bhaji and chutney served on a steel thali"
+                    width="400"
+                    height="533"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="images/opt/tiffin2-400.avif 400w, images/opt/tiffin2-640.avif 640w"
+                    sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 92vw"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="images/opt/tiffin2-400.webp 400w, images/opt/tiffin2-640.webp 640w"
+                    sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 92vw"
+                  />
+                  <img
+                    src="images/opt/tiffin2-400.jpg"
+                    srcset="images/opt/tiffin2-400.jpg 400w, images/opt/tiffin2-640.jpg 640w"
+                    sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 92vw"
+                    alt="Fresh homemade uttapam topped with onion and coriander, with coconut chutney"
+                    width="400"
+                    height="533"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="images/opt/tiffin3-400.avif 400w, images/opt/tiffin3-640.avif 640w"
+                    sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 92vw"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="images/opt/tiffin3-400.webp 400w, images/opt/tiffin3-640.webp 640w"
+                    sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 92vw"
+                  />
+                  <img
+                    src="images/opt/tiffin3-400.jpg"
+                    srcset="images/opt/tiffin3-400.jpg 400w, images/opt/tiffin3-640.jpg 640w"
+                    sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 92vw"
+                    alt="Two stuffed parathas served hot on a steel plate with tomato ketchup"
+                    width="400"
+                    height="533"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Get in touch &amp; order</h2>
+            <p class="section-sub">
+              Message us on WhatsApp for the fastest response, or call us directly.
+            </p>
+          </header>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <h3>Order &amp; Enquiries</h3>
+
+              <ul class="contact-list">
+                <li>
+                  <span class="contact-icon" aria-hidden="true">💬</span>
+                  <div class="contact-detail">
+                    <strong>WhatsApp</strong>
+                    <a
+                      href="https://wa.me/919890607607?text=Hi%20Suvarna%20Tiffin%20Service%2C%20I%20want%20to%20order%20a%20tiffin"
+                      target="_blank"
+                      rel="noopener"
+                      >Chat with us on WhatsApp</a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <span class="contact-icon" aria-hidden="true">📞</span>
+                  <div class="contact-detail">
+                    <strong>Phone</strong>
+                    <a href="tel:+917558701599">+91 75587 01599</a>
+                    <a href="tel:+919890607607">+91 98906 07607</a>
+                  </div>
+                </li>
+                <li>
+                  <span class="contact-icon" aria-hidden="true">📍</span>
+                  <div class="contact-detail">
+                    <strong>Pickup Address</strong>
+                    <address>
+                      40/1/23, Namadev Nagar, Lane No. 3, Rajashri Colony, Namdeo Nagar, Wadgaon
+                      Sheri, Pune, Maharashtra 411014
+                    </address>
+                  </div>
+                </li>
+              </ul>
+
+              <a
+                class="btn btn-whatsapp btn-block btn-lg"
+                href="https://wa.me/919890607607?text=Hi%20Suvarna%20Tiffin%20Service%2C%20I%20want%20to%20order%20a%20tiffin"
+                target="_blank"
+                rel="noopener"
+                >💬 Order on WhatsApp</a
+              >
             </div>
-            <div class="faq-item">
-              <dt class="faq-q">Q: Can I order for a group or event?</dt>
-              <dd class="faq-a">A: Yes, we provide bulk and monthly plans. Contact us for a custom quote.</dd>
+
+            <div class="contact-card contact-card--map">
+              <h3>Find Us</h3>
+              <div class="map-wrap">
+                <iframe
+                  src="https://www.google.com/maps?q=18.5509938,73.9233879&amp;z=16&amp;output=embed"
+                  title="Map showing the pickup location of Suvarna Homemade Tiffin Service in Wadgaon Sheri, Pune"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <a
+                class="btn btn-ghost btn-block"
+                href="https://www.google.com/maps/search/?api=1&amp;query=18.5509938,73.9233879"
+                target="_blank"
+                rel="noopener"
+                >Open in Google Maps</a
+              >
             </div>
-            <div class="faq-item">
-              <dt class="faq-q">Q: How do I pay?</dt>
-              <dd class="faq-a">A: We accept cash, UPI, and most digital payments at pickup.</dd>
-            </div>
-          </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FINAL CTA ============ -->
+      <section class="cta-band" aria-labelledby="cta-title">
+        <div class="container cta-inner">
+          <h2 id="cta-title">Hungry? Your tiffin is one message away.</h2>
+          <p>Send us a WhatsApp message and we'll have your meal ready.</p>
+          <a
+            class="btn btn-whatsapp btn-lg"
+            href="https://wa.me/919890607607?text=Hi%20Suvarna%20Tiffin%20Service%2C%20I%20want%20to%20order%20a%20tiffin"
+            target="_blank"
+            rel="noopener"
+            >💬 Order on WhatsApp</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <p class="footer-title">
+            <span aria-hidden="true">🍱</span> Suvarna Homemade Tiffin Service
+          </p>
+          <p class="footer-note">Ghar jaisa khana, roz aapke ghar tak.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-contact">
+          <a href="tel:+917558701599">+91 75587 01599</a>
+          <a href="tel:+919890607607">+91 98906 07607</a>
+          <a
+            href="https://wa.me/919890607607?text=Hi%20Suvarna%20Tiffin%20Service%2C%20I%20want%20to%20order%20a%20tiffin"
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
+          >
         </div>
       </div>
-    </main>
-    <button id="backToTop" aria-label="Back to top" title="Back to top">↑</button>
-    <footer>© 2026 Suvarna Homemade Tiffin Service — Made with ❤️</footer>
-    <script>
-      // Show/hide back to top button
-      const backToTop = document.getElementById('backToTop');
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-          backToTop.style.display = 'block';
-        } else {
-          backToTop.style.display = 'none';
-        }
-      });
-      backToTop.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    </script>
+
+      <div class="container footer-bottom">
+        <p>© 2026 Suvarna Homemade Tiffin Service — Made with ❤️</p>
+      </div>
+    </footer>
+
+    <!-- Sticky mobile WhatsApp CTA -->
+    <aside class="mobile-cta" id="mobileCta" aria-label="Order on WhatsApp">
+      <a
+        class="btn btn-whatsapp btn-block"
+        href="https://wa.me/919890607607?text=Hi%20Suvarna%20Tiffin%20Service%2C%20I%20want%20to%20order%20a%20tiffin"
+        target="_blank"
+        rel="noopener"
+      >
+        <span aria-hidden="true">💬</span> Order on WhatsApp
+      </a>
+    </aside>
+
+    <script src="js/main.js" defer></script>
   </body>
 </html>
